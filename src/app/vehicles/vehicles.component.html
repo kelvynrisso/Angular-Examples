@@ -3,23 +3,10 @@
     <span>Vehicles</span>
   </mat-toolbar>
   <mat-list>
-    <mat-list-item>Millennium Falcon</mat-list-item>
-    <mat-list-item>Slave I</mat-list-item>
-    <mat-list-item>TIE Fighter</mat-list-item>
-    <mat-list-item>X-Wing Fighter</mat-list-item>
-    <mat-list-item>Imperial Star Destroyer</mat-list-item>
-    <mat-list-item>AT-AT Walkers</mat-list-item>
-    <mat-list-item>Speeder Bike</mat-list-item>
-    <mat-list-item>X-34 Landspeeder</mat-list-item>
-    <mat-list-item>TIE Advanced x1</mat-list-item>
-    <mat-list-item>TIE Interceptor</mat-list-item>
-    <mat-list-item>Sandcrawler</mat-list-item>
-    <mat-list-item>Imperial Shuttle</mat-list-item>
-    <mat-list-item>Snowspeeder</mat-list-item>
-    <mat-list-item>A-Wing Fighter</mat-list-item>
-    <mat-list-item>AT-ST Walker</mat-list-item>
-    <mat-list-item>Y-Wing Fighter</mat-list-item>
-    <mat-list-item>B-Wing</mat-list-item>
-    <mat-list-item>Naboo N-1 Starfighter</mat-list-item>
+    <mat-list-item *ngFor="let vehicle of vehicles" >
+      <button mat-raised-button>
+          {{vehicle.name}}
+      </button>
+    </mat-list-item>
   </mat-list>
 </div>

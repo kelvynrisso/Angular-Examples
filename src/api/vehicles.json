@@ -1,0 +1,76 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Millennium Falcon"
+        },
+        {
+            "id": 2,
+            "name": "Slave I"
+        },
+        {
+            "id": 3,
+            "name": "TIE Fighter"
+        },
+        {
+            "id": 4,
+            "name": "X-Wing Fighter"
+        },
+        {
+            "id": 5,
+            "name": "Imperial Star Destroyer"
+        },
+        {
+            "id": 6,
+            "name": "AT-AT Walkers"
+        },
+        {
+            "id": 7,
+            "name": "Speeder Bike"
+        },
+        {
+            "id": 8,
+            "name": "X-34 Landspeeder"
+        },
+        {
+            "id": 9,
+            "name": "TIE Advanced x1"
+        },
+        {
+            "id": 10,
+            "name": "TIE Interceptor"
+        },
+        {
+            "id": 11,
+            "name": "Sandcrawler"
+        },
+        {
+            "id": 12,
+            "name": "Imperial Shuttle"
+        },
+        {
+            "id": 13,
+            "name": "Snowspeeder"
+        },
+        {
+            "id": 14,
+            "name": "A-Wing Fighter"
+        },
+        {
+            "id": 15,
+            "name": "AT-ST Walker"
+        },
+        {
+            "id": 16,
+            "name": "Y-Wing Fighter"
+        },
+        {
+            "id": 17,
+            "name": "B-Wing"
+        },
+        {
+            "id": 18,
+            "name": "Naboo N-1 Starfighter"
+        }
+    ]
+}

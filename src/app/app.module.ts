@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { VehiclesComponent } from './vehicles/vehicles.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
+import { MatButtonModule } from '@angular/material/button';
+import { VehiclesService } from './vehicles/vehicles.service';
+import { Http, HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -15,9 +18,13 @@ import { MatListModule } from '@angular/material/list';
   imports: [
     BrowserModule,
     MatToolbarModule,
-    MatListModule
+    MatListModule,
+    MatButtonModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [
+    VehiclesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
