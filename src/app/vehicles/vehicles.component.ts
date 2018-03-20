@@ -12,7 +12,7 @@ export class VehiclesComponent implements OnInit {
 
   vehicles: Vehicle[];
 
-  constructor(private service: VehiclesService) { }
+  constructor(private _service: VehiclesService) { }
 
   ngOnInit() {
     this.getVehicles();
@@ -20,7 +20,7 @@ export class VehiclesComponent implements OnInit {
 
   private getVehicles() {
     this.vehicles = [];
-    this.service.getVehicles()
+    this._service.getVehicles()
       .subscribe(res => {
         this.vehicles = res;
       },

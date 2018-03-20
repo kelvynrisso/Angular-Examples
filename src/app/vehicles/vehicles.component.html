@@ -4,9 +4,9 @@
   </mat-toolbar>
   <mat-list>
     <mat-list-item *ngFor="let vehicle of vehicles" >
-      <button mat-raised-button>
+      <a mat-raised-button [routerLink]="['detail', vehicle.id]">
           {{vehicle.name}}
-      </button>
+      </a>
     </mat-list-item>
   </mat-list>
 </div>

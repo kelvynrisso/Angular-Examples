@@ -16,6 +16,13 @@ export class VehiclesService {
       .map(res => this.extractData<Vehicle[]>(res));
   }
 
+  getVehicle(id: number) : Observable<Vehicle>{
+    return <Observable<Vehicle>>this.http
+      .get('api/vehicles.json')
+      .map(res => this.extractData<Vehicle[]>(res)
+      .filter(vehicle => vehicle.id === id)[0]);
+  }
+
   private extractData<T>(res: Response) {
     if (res.status < 200 || res.status >= 300) {
       throw new Error('Bad response status: ' + res.status);
